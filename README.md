@@ -7,4 +7,4 @@ Realizado por Gabriel Viscarret Atienza, en Noviembre de 2018
 Se compone:
 - Practica1.py: Desarrollo de un program en pyton para la descarga y parseo de una página web
 - Practica1.pdf: Contestación a las preguntas de la práctica
-- ANEL.CSV: Resultado del scrpaing en formato CSV
+- ANEL.CSV: Resultado del scraping en formato CSV
