@@ -23,13 +23,10 @@ def parsea(link):
             row={"fecha":"","Nombre":"","Domicilio":"","Poblacion":"","Correo":"","Web":"","Actividad":"","img":""}
             #La fecha está en un primer nivel
             fecha=post.find('small')
-            print(fecha.get_text().strip())
             row["fecha"]=(fecha.get_text()).strip().split("|",2)[0].strip()
             #El resto de datos está en el grupo entry
-            for entrada in post.find_all(attrs={'class':'entry'}):
-                print('*********************')            
+            for entrada in post.find_all(attrs={'class':'entry'}):         
                 for campo in entrada.find_all('p'):
-                    print(campo.get_text())
                     if campo.find('img'):
                          direcc=campo.find('img').get('src')
                          #Guardamos la imagen (logotipo) que acabamos dedetectar
